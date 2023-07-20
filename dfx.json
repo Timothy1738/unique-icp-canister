@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "decentralizedFileStorage": {
+      "main": "src/index.ts",
+      "type": "custom",
+      "build": "npx azle decentralizedFileStorage",
+      "root": "src",
+      "ts": "src/index.ts",
+      "candid": "src/index.did",
+      "wasm": ".azle/decentralizedFileStorage/decentralizedFileStorage.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "output": "dist"
+    },
+    "canister": {
+      "memoryAllocation": "512MiB",
+      "computeAllocation": "2"
+    },
+    "frontend": "dist"
+  }
+}
+
